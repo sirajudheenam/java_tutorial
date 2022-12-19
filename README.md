@@ -1,15 +1,20 @@
 ## Install Java SDK
 
-## Set JAVA_HOME and JDK_HOME
-Add the following lines to `.bashrc` or `.zshrc` depends on your shell
+``` bash
+# Set JAVA_HOME and JDK_HOME
+
+# Add the following lines to `.bashrc` or `.zshrc` depends on your shell
 export JAVA_HOME=/opt/homebrew/opt/openjdk/bin
 export JDK_HOME=/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home
 
+# then source it
+source .zshrc
+
 ## Check if correctly set 
+``` bash
 env | grep JAVA
 env | grep JDK
 
-``` bash
 mkdir java_example/animal
 cd java_example
 
